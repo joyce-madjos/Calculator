@@ -1,8 +1,102 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-font-family: 'Courier Prime', monospace;
-font-family: 'Roboto Mono', monospace;
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.container {
+  border: 7px solid #ff00ff;
+  border-radius: 10px;
+  width: 35%;
+  margin: 2% auto 0;
+  padding: 0;
+  position: relative;
+  background-color: #fbc0cb;
+}
+
+.display-screen {
+  padding: 0;
+  margin: 5% auto;
+  height: auto;
+  width: 95%;
+  font-size: 48px;
+  color: #1d0029;
+  text-align: center;
+  background: #c0fbf0;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.keys-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1% auto 0;
+  width: 95%;
+  height: auto;
+  gap: 1%;
+}
+
+.key {
+  margin: 1% 0;
+  font-size: 48px;
+  font-family: "Courier Prime", monospace;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  padding: 1%;
+  flex-basis: calc(95% / 4);
+  color: #000000;
+}
+
+.keys-container > button,
+.glass {
+  background: #d2c0fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.operator {
+  background: #e8fbc0 !important;
+}
+
+.equal {
+  background: #90ec8c !important;
+}
+
+.on-off-button {
+  display: flex;
+  margin: 1% auto;
+  gap: 1%;
+  width: 95%;
+  justify-content: center;
+}
+
+.on-off-button > button {
+  padding: 1%;
+  width: 45%;
+}
+
+.clear-power-button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+
+footer {
+  font-family: "Times New Roman", Times, serif;
+  margin: 2%;
+  padding: 0;
+  border: 0;
+  text-align: center;
 }
