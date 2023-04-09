@@ -24,6 +24,14 @@ body {
   background-color: #fbc0cb;
 }
 
+.power {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 1% auto 0;
+}
+
 .display-screen {
   padding: 0;
   margin: 5% auto;
@@ -31,13 +39,29 @@ body {
   width: 95%;
   font-size: 48px;
   color: #1d0029;
-  text-align: center;
+  text-align: right;
   background: #c0fbf0;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow-y: auto;
+}
+
+.display-screen::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.display-screen::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.display-screen::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .keys-container {
